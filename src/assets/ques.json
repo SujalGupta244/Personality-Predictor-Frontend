@@ -1,0 +1,50 @@
+[
+    {
+        "ques":"How do you prefer to spend your free time?",
+        "options": ["Reading a book", "Watching TV", "Going for a walk","Hanging out with friends"]
+    },
+    {
+        "ques":"What is your favorite type of music?",
+        "options": ["Pop","Rock","Classical","Country"]
+    },
+    {
+        "ques":"How do you handle stress?",
+        "options":[ "Meditate or practice yoga", "Talk to a friend or family member", "Exercise", "Take a nap"]
+    },
+    {
+        "ques":"What is your favorite type of food?",
+        "options":[ "Italian", "Mexican", "Chinese", "American"]
+    },
+    {
+        "ques":"How do you approach new challenges?",
+        "options": ["Dive right in ", "Take time to plan and prepare","Seek advice from others ","Avoid new challenges"]
+    },
+    {
+        "ques":"What is your ideal vacation destination?",
+        "options": ["Beach","Mountains","City","Countryside"]
+    },
+    {
+        "ques":"How do you prefer to communicate with others?",
+        "options": ["In person","Phone call","Text message","Email"]
+    },
+    {
+        "ques":"What is your favorite hobby?",
+        "options": ["Playing sports ","Painting or drawing","Cooking or baking","Playing video games"]
+    },
+    {
+        "ques":"How do you handle criticism?",
+        "options": ["Take it as a learning opportunity","Get defensive","Ignore it","Feel hurt or upset"]
+    },
+    {
+        "ques":"What is your favorite season?",
+        "options": ["Spring","Summer","Fall","Winter"]
+    },
+    {
+        "ques":"Can you describe a situation where you had to make a difficult decision and how you handled it?",
+        "options":[]
+    },
+    {
+        "ques":"Do you consider yourself a leader or a follower, and why?",
+        "options": []
+    }
+]

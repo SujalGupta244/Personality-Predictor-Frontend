@@ -1,0 +1,114 @@
+[
+  {
+    "id":1,
+    "name": "ESFP",
+    "fullForm":"Extroverted, Sensing, Feeling, Perceiving",
+
+    "desc": "ESFPs are lively, outgoing, and spontaneous individuals. They thrive on being around people, enjoying the present moment, and seeking new experiences. They're often adaptable, enthusiastic, and practical, valuing harmony and living life to the fullest."
+  },
+  {
+    "id":2,
+    "name": "INTJ",
+    "fullForm":"Introverted, Intuitive, Thinking, Judging",
+
+    "desc": "INTJs are analytical, strategic, and independent thinkers. They are known for their logical and innovative approach to problem-solving. INTJs are often visionaries who prefer working alone or in small groups, focusing on long-term goals and creating efficient systems."
+  },
+  {
+    "id":3,
+    "name": "ENTP",
+    "fullForm":"Extroverted, Intuitive, Thinking, Perceiving",
+
+    "desc": "ENTPs are inventive, resourceful, and enthusiastic individuals. They're characterized by their curiosity, adaptability, and love for exploring new ideas and possibilities. They enjoy debating and challenging established norms, often bringing innovative solutions to the table."
+  },
+  {
+    "id":4,
+    "name": "ISTJ",
+    "fullForm":"Introverted, Sensing, Thinking, Judging",
+
+    "desc": "ISTJs are practical, detail-oriented, and responsible individuals. They value structure, reliability, and tradition, often following established rules and procedures. ISTJs are known for their logical and systematic approach to tasks, making them highly organized and dependable."
+  },
+  {
+    "id":5,
+    "name": "ENTJ",
+    "fullForm":"Extroverted, Intuitive, Thinking, Judging",
+
+    "desc": "ENTJs are decisive, assertive, and strategic leaders. They're goal-oriented, efficient, and thrive in positions of authority. ENTJs are known for their strong will, logical thinking, and ability to turn ideas into plans for practical implementation."
+  },
+  {
+    "id":6,
+    "name": "INTP",
+    "fullForm":"Introverted, Intuitive, Thinking, Perceiving",
+
+    "desc": "INTPs are analytical, creative, and independent thinkers. They enjoy exploring theoretical concepts, often delving deep into complex problems. INTPs are characterized by their logical reasoning, curiosity, and adaptability in various situations."
+  },
+  {
+    "id":7,
+    "name": "ISFJ",
+    "fullForm":"Introverted, Sensing, Feeling, Judging",
+
+    "desc": "ISFJs are warm, supportive, and reliable individuals. They're empathetic caretakers who value harmony and tradition. ISFJs excel in paying attention to details, fostering a nurturing environment, and being loyal to their commitments."
+  },
+  {
+    "id":8,
+    "name": "ISFP",
+    "fullForm":"Introverted, Sensing, Feeling, Perceiving",
+
+    "desc": "ISFPs are artistic, adaptable, and sensitive individuals. They appreciate aesthetics and enjoy expressing themselves creatively. ISFPs value authenticity, freedom, and tend to live in the present moment, exploring life with a sense of wonder."
+  },
+  {
+    "id":9,
+    "name": "ISTP",
+    "fullForm":"Introverted, Sensing, Thinking, Perceiving",
+
+    "desc": "ISTPs are pragmatic, hands-on, and logical individuals. They have a strong sense of curiosity about how things work and are skilled at problem-solving in real-world situations. They're adaptable, independent, and enjoy exploring with a practical approach."
+  },
+  {
+    "id":10,
+    "name": "ESFJ",
+    "fullForm":"Extroverted, Sensing, Feeling, Judging",
+
+    "desc": "ESFJs are sociable, caring, and conscientious individuals. They prioritize relationships and are committed to helping others. ESFJs thrive in nurturing environments, value tradition and structure, and are dependable in supporting their communities."
+  },
+  {
+    "id":11,
+    "name": "ENFJ",
+    "fullForm":"Extroverted, Intuitive, Feeling, Judging",
+
+    "desc": "ENFJs are charismatic, empathetic, and inspirational leaders. They are skilled communicators who genuinely care about people's well-being. ENFJs are driven by their vision and strive to create meaningful connections and personal growth in their communities."
+  },
+  {
+    "id":12,
+    "name": "ENFP",
+    "fullForm":"Extroverted, Intuitive, Feeling, Perceiving",
+
+    "desc": "ENFPs are enthusiastic, creative, and adaptable individuals. They're driven by their curiosity and thrive on exploring new possibilities. ENFPs are often characterized by their passion for ideas, values, and their ability to inspire and motivate others."
+  },
+  {
+    "id":13,
+    "name": "ESTJ",
+    "fullForm":"Extroverted, Sensing, Thinking, Judging",
+
+    "desc": "ESTJs are practical, efficient, and organized individuals. They value structure, tradition, and are dedicated to achieving their goals. They're dependable leaders who excel in implementing plans and maintaining order in their environments."
+  },
+  {
+    "id":14,
+    "name": "INFP",
+    "fullForm":"Introverted, Intuitive, Feeling, Perceiving",
+
+    "desc": "INFPs are idealistic, empathetic, and creative individuals. They deeply value authenticity and personal growth, often seeking meaning and purpose in their lives. INFPs are introspective and passionate about their beliefs and values."
+  },
+  {
+    "id":15,
+    "name": "INFJ",
+    "fullForm":"Introverted, Intuitive, Feeling, Judging",
+
+    "desc": "INFJs are insightful, empathetic, and visionary individuals. They possess a deep understanding of human emotions and are driven by a strong sense of purpose. INFJs are often focused on making a positive impact on the world and nurturing meaningful connections."
+  },
+  {
+    "id":16,
+    "name": "ESTP",
+    "fullForm":"Extroverted, Sensing, Thinking, Perceiving",
+
+    "desc": "ESTPs are energetic, pragmatic, and adaptable individuals. They're action-oriented and thrive in dynamic environments. ESTPs enjoy taking risks, exploring opportunities, and using their practical skills to solve problems in the moment."
+  }
+]
