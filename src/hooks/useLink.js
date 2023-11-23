@@ -1,7 +1,7 @@
 
 const useLink = () => {
     const baseURL = import.meta.env.VITE_API_URL
-    const loginURL = import.meta.env.VITE_URL
+    const loginURL = import.meta.env.VITE_API_URL
 
     const api = 'api'
     
