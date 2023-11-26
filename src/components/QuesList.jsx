@@ -24,11 +24,17 @@ const QuesList = () => {
   const formData = new FormData()
   formData.append('data', answer)
 
+  // useEffect(()=>{
+  //   if(selectedOpt == ""){
+  //     setCount(count)
+  //   }
+  //   setQuestions(ques)
+  // })
+
   useEffect(()=>{
-    if(selectedOpt == ""){
-      setCount(count)
+    if(Object.keys(result).length == 0){
+      setLoading(false)
     }
-    setQuestions(ques)
   })
 
   useEffect(()=>{
@@ -49,10 +55,10 @@ const QuesList = () => {
   
   const handleSubmit = async() =>{
     setLoading(true)
-    const res =  await axios.post(`${baseURL}`,formData)
+    const res =  await axios.post(`${baseURL}/${api}/`,formData)
     const data =  await res.data
     setResult(answers.find(ele => ele.name == data.result))
-    setLoading(false)
+    // setLoading(false)
   }
 
   const handleBack = () =>{
