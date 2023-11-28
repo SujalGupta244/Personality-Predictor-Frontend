@@ -58,7 +58,6 @@ const QuesList = () => {
     const res =  await axios.post(`${baseURL}/${api}/`,formData)
     const data =  await res.data
     setResult(answers.find(ele => ele.name == data.result))
-    // setLoading(false)
   }
 
   const handleBack = () =>{
