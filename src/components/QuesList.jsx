@@ -10,7 +10,7 @@ axios.defaults.headers.common['Content-Type'] = "multipart/form-data"
 
 const QuesList = () => {
 
-  const {baseURL,api,loginURL} = useLink()
+  const {baseURL,api} = useLink()
 
   const [count,setCount] = useState(0)
   const [questions,setQuestions] = useState(ques)
