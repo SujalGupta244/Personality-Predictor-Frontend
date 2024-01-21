@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route ,Navigate} from 'react-router-dom'
 import Login from './components/Login'
 import Layout from './components/Layout'
 import Public from './components/Public'
@@ -14,10 +14,11 @@ function App() {
       <Route path='/' element={<Layout/>}>
         
         {/* Public Routes */}
-        <Route index element={<SignUp/>}/>
+        <Route index element={<Navigate to="/home"></Navigate>}/>
         <Route path="login" element={<Login/>}/>
-        {/* Private Routes */}
+        <Route path="signup" element={<SignUp/>}/>
         <Route path="home" element={<Public />} />
+        {/* Private Routes */}
         <Route path='questions' element={<QuesList/>}></Route>
 
       </Route>

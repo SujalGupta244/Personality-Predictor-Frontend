@@ -1,16 +1,23 @@
-import React from "react";
+import React ,{useState} from "react";
 import axios from "axios";
 import useStore from "../hooks/useStore";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useLink from "../hooks/useLink";
+
+
 const SignUp = () => {
-  const [username, setUsername] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [password, setPassword] = React.useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const {baseURL} = useLink()
   const store = useStore();
   const { addToken } = store;
+
+  const navigate = useNavigate()
+
+
   const handleSubmit = async(e) => {
     e.preventDefault();
     const data = {
@@ -18,17 +25,26 @@ const SignUp = () => {
       email: email,
       password: password,
     };
-    const res = await axios.post(`${baseURL}/signup/`,data,{
-        headers: {
-            'Content-Type': 'application/json',
-        // You might need additional headers or authentication tokens here
-        },
-    });
+    try{
+      const res = await axios.post(`${baseURL}/signup/`,data,{
+          headers: {
+              'Content-Type': 'application/json',
+          // You might need additional headers or authentication tokens here
+          },
+      });
+  
+      const resData = await res.data;
+      navigate('/login')
+      addToken(resData);
+      console.log(resData);
+    }catch(e){
 
-    console.log(res);
-    addToken(res);
+      setError(e.response.data.message)
+      // console.log(e.response.data.message);
+    }
+
   };
-
+  // console.log(error)
   return (
     <div className="flex items-center justify-center h-[90vh]">
       <div className="p-12 border-4 rounded-xl border-[#0096c7] min-w-[30%] text-center">
@@ -65,6 +81,7 @@ const SignUp = () => {
             Log In
           </Link>
         </p>
+        {error.length > 0 && <p className="text-red-500">{error}</p>}
       </div>
     </div>
   );

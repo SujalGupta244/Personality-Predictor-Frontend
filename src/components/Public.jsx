@@ -15,7 +15,7 @@ const Public = () => {
                     Start your test now.
                 </p>
                 <button className='bg-[#0096c7] cursor-pointer px-6 py-2 text-lg text-white rounded-xl'>
-                    <Link to="/questions">Start</Link>
+                    <Link to="/login">Login</Link>
                 </button>
                 <div className='mt-6'>
                     <h3 className='text-xl font-semibold'>Rules</h3>
