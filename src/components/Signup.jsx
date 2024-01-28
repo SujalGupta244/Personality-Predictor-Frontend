@@ -1,8 +1,9 @@
 import React ,{useState} from "react";
 import axios from "axios";
 import useStore from "../hooks/useStore";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import useLink from "../hooks/useLink";
+import useAuth from "../hooks/useAuth";
 
 
 const SignUp = () => {
@@ -16,6 +17,7 @@ const SignUp = () => {
   const { addToken } = store;
 
   const navigate = useNavigate()
+  const { username : user, email : userEmail } = useAuth();
 
 
   const handleSubmit = async(e) => {
@@ -44,6 +46,14 @@ const SignUp = () => {
     }
 
   };
+
+
+  
+  if (user && userEmail) {
+    return (
+      <Navigate to="/questions" />
+    )
+  }
   // console.log(error)
   return (
     <div className="flex items-center justify-center h-[90vh]">

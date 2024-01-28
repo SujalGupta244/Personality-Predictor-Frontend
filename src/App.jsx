@@ -5,6 +5,16 @@ import Layout from './components/Layout'
 import Public from './components/Public'
 import QuesList from './components/QuesList'
 import SignUp from './components/Signup'
+import useLink from './hooks/useLink'
+import axios from 'axios'
+
+
+const {baseURL} = useLink()
+
+axios.defaults.baseURL = baseURL
+
+// Sends the cookie back to backend server
+axios.defaults.withCredentials = true
 
 
 function App() {

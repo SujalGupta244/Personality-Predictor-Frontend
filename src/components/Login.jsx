@@ -2,13 +2,16 @@ import React ,{useState} from 'react'
 import axios from 'axios'
 import useStore from '../hooks/useStore'
 import useLink from "../hooks/useLink";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import useAuth from '../hooks/useAuth';
 
 
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState("");
+
+  const { username, email : userEmail } = useAuth();
 
   const {baseURL} = useLink()
   
@@ -30,18 +33,24 @@ const Login = () => {
             'Content-Type': 'application/json',
         // You might need additional headers or authentication tokens here
         },
+        withCredentials: true
       })
       const resData = await res.data;
       console.log(resData)
       navigate("/questions")
-      addToken(res)   
+      addToken(resData.message)   
     }catch(e){
-
+      console.log(e)
       setError(e.response.data.message)
       // console.log(e.response.data.message);
     } 
   }
 
+  if (username && userEmail) {
+    return (
+      <Navigate to="/questions" />
+    )
+  }
 
   return (
     <div className='flex items-center justify-center h-[90vh]'>

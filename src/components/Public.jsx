@@ -5,6 +5,7 @@ import useStore from '../hooks/useStore'
 const Public = () => {
     const store = useStore()
     console.log(store.token)
+
     const content = (
         <section className='p-4 mt-10 text-center'>
             <header>

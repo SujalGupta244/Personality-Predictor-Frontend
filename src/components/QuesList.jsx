@@ -3,6 +3,8 @@ import ques from '../assets/ques.json'
 import ans from '../assets/answer.json'
 import axios from 'axios'
 import useLink from '../hooks/useLink'
+import useAuth from '../hooks/useAuth'
+import { Navigate } from 'react-router-dom'
 
 axios.defaults.headers.common['Content-Type'] = "multipart/form-data"
 // axios.defaults.headers.common['Accept'] = "application/json"
@@ -23,6 +25,9 @@ const QuesList = () => {
 
   const formData = new FormData()
   formData.append('data', answer)
+
+  // const { username, email } = useAuth();
+
 
   // useEffect(()=>{
   //   if(selectedOpt == ""){
@@ -67,7 +72,15 @@ const QuesList = () => {
     setSelectedOpt("")
   }
 
+  // console.log(username, email)
   // console.log(answer)
+
+  // if(!username && !email){
+  //   return (
+  //     <Navigate to="/login" />
+  //   )
+  // }
+
   return (
     <div className='flex items-center justify-center h-[80vh] overflow-hidden'>
       {count <= 11 ? <div className="bg-[#90e0ef] p-8 rounded-lg max-w-[80vw]">
@@ -79,7 +92,8 @@ const QuesList = () => {
             {questions[count]?.options.map((option,index)=>(
               <div key={index} className='py-1 px-3 mb-3 rounded-lg flex items-center justify-between border border-gray-700 cursor-pointer' onClick={(e)=>{setSelectedOpt(e.target.value)}}>
                 <label className='text-lg font-semibold cursor-pointer w-full' htmlFor={option}>{option}</label>
-                <input className='h-4 w-4 m-2 cursor-pointer accent-slate-700'   checked={selectedOpt === option} type="radio" id={option} name="opt" value={option} />
+                <input className='h-4 w-4 m-2 cursor-pointer accent-slate-700'   
+                checked={selectedOpt === option} type="radio" id={option} name="opt" value={option} />
               </div>
             ))}
             </>
