@@ -7,6 +7,7 @@ import QuesList from './components/QuesList'
 import SignUp from './components/Signup'
 import useLink from './hooks/useLink'
 import axios from 'axios'
+import NotFound from './components/NotFound'
 
 
 const {baseURL} = useLink()
@@ -32,6 +33,7 @@ function App() {
         <Route path='questions' element={<QuesList/>}></Route>
 
       </Route>
+      <Route path='*' element={<NotFound/>}/>
     </Routes>
   )
 }
