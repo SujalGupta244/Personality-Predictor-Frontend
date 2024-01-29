@@ -26,7 +26,7 @@ const QuesList = () => {
   const formData = new FormData()
   formData.append('data', answer)
 
-  // const { username, email } = useAuth();
+  const { username, email } = useAuth();
 
 
   // useEffect(()=>{
@@ -75,11 +75,11 @@ const QuesList = () => {
   // console.log(username, email)
   // console.log(answer)
 
-  // if(!username && !email){
-  //   return (
-  //     <Navigate to="/login" />
-  //   )
-  // }
+  if(!username && !email){
+    return (
+      <Navigate to="/login" />
+    )
+  }
 
   return (
     <div className='flex items-center justify-center h-[80vh] overflow-hidden'>

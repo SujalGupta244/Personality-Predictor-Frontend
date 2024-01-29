@@ -1,12 +1,20 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import useStore from '../hooks/useStore'
+import useAuth from '../hooks/useAuth'
 
 const Public = () => {
     const store = useStore()
-    console.log(store.token)
+    // console.log(store.token)
+    const { username, email } = useAuth();
+    
+    if (username && email) {
+        return (
+        <Navigate to="/questions" />
+        )
+    }
 
-    const content = (
+    return (
         <section className='p-4 mt-10 text-center'>
             <header>
                 <h1 className='text-5xl font-bold mb-4 '>Welcome to <span className='nowrap'>Personality Test</span></h1>
@@ -32,7 +40,6 @@ const Public = () => {
             </footer>
         </section>
     )
-    return content;
 }
 
 export default Public
